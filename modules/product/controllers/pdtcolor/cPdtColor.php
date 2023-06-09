@@ -273,7 +273,7 @@ class cPdtColor extends MX_Controller {
     }
 
     function FStCCLRSometing($ptData){
-        return $ptData . ' 123';
+        return $ptData . ' : ' . $ptData;
     }
 
 }
