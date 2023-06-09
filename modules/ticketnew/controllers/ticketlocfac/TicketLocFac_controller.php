@@ -234,7 +234,7 @@ class TicketLocFac_controller extends MX_Controller {
     public function FSoCFACDeleteEvent(){
         $tIDCode = $this->input->post('tIDCode');
         $aDataMaster = array(
-            'FTFacCode' => $tIDCode
+            'FTFacCode' => (int) $tIDCode
         );
         $aResDel    = $this->TicketLocFac_model->FSaMFACDelAll($aDataMaster);
         $aReturn    = array(
